@@ -1,0 +1,27 @@
+.columnRight {
+    float: left;
+    width: 19%;
+    height: 100%;
+    display: block;
+  }
+
+.columnLeft {
+    float: left;
+    width: 80%;
+    height: 100%;
+    display: block;
+  }
+
+.columnHalf {
+    float: left;
+    width: 50%;
+    display: block;
+  }
+  
+
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

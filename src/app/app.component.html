@@ -1,0 +1,156 @@
+
+
+<div class="row">
+  <div class="columnLeft">
+    <div leaflet
+      style="height: 800px"
+      [leafletLayers]="options.layers"
+      [leafletOptions]="options"
+      (leafletMapReady)="onMapReady($event)"
+    ></div>
+  </div>
+
+  <div class="columnRight">
+
+    <div class="container" style="width: 100%;">
+      <div class="panel-group">
+        <div class="panel panel-info">
+          <div class="panel-heading" style="text-align: center">
+            <h3> Game Controls </h3>
+          </div>
+          <div class="panel-body" style="font-size: small;">
+
+            <!-- Control for setting how to filter the countries (eg all, region, or subregions) -->
+            <div class="row">
+              <div class="columnHalf" style="top: 100%;">
+                <p style="text-align: center;"> Filter Countries By </p>
+                <select [(ngModel)]="gameFilter" class="form-control input-sm" id="countryFilterSelector">
+                  <option>None</option>
+                  <option>Regions</option>
+                  <option>Subregions</option>
+                </select>
+              </div>
+              <div class="columnHalf">
+                <p *ngIf="gameFilter == 'Regions' || gameFilter == 'Subregions'" style="text-align: center;"> Filter Type </p>
+                <select class="form-control input-sm" id="region" *ngIf="gameFilter == 'Regions'">
+                  <option *ngFor="let region of regions" [value]="region">{{region}}</option>
+                </select>
+                <select class="form-control input-sm" id="subregion" *ngIf="gameFilter == 'Subregions'">
+                  <option *ngFor="let subregion of subregions" [value]="subregion">{{subregion}}</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Control for setting how to filter the countries (eg all, region, or subregions) -->
+            <div class="row" style="padding-top: 5%;">
+              <div class="columnHalf" style="top: 100%;">
+                <p style="text-align: center;"> Game Type </p>
+                <select class="form-control input-sm" id="gameType">
+                  <option [value]="1"> Name the Country </option>
+                  <option [value]="2"> Find the Country </option>
+                  <option [value]="3" *ngIf="gameFilter == 'None'"> Name the Country (Random 10) </option>
+                  <option [value]="4" *ngIf="gameFilter == 'None'"> Find the Country (Random 10) </option>
+                </select>
+              </div>
+              <div class="columnHalf">
+                <div class="center" style="padding-top: 20%;">
+                  <button class="btn btn-outline-primary" (click)="startGame()">
+                    Start Game
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" *ngIf="gameStarted" style="width: 100%;">
+      <div class="panel-group">
+        <div class="panel panel-info">
+          <div class="panel-heading" style="text-align: center">
+            <h3> Playing the Game </h3>
+          </div>
+          <div class="panel-body">
+            <p> Countries Left: <u>{{gameCountryCount - guessedCount}}</u> </p>
+
+            <p *ngIf="gameType == 2">
+              Please try to click on <u>{{currentCountryName}}</u>.
+            </p>
+
+            <select class="form-control input-sm" id="guess" *ngIf="gameType == 1">
+              <option *ngFor="let guess of filteredCountryNames" [value]="guess">{{guess}}</option>
+            </select>
+            <div class="row">
+              <div class="columnHalf">
+                <div spellcheck="true" *ngIf="gameType == 1">
+                  <input (keyup)="filterStateTable($event)" style="width: 100%; padding: 5px; box-sizing:border-box" >
+                </div>
+              </div>
+              <div class="columnHalf">
+                <div class="center">
+                  <button class="btn btn-outline-primary" (click)="guessName()" *ngIf="gameType == 1">
+                    Guess Name
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" *ngIf="guessedCount > 0" style="width: 100%;">
+      <div class="panel-group">
+        <div class="panel panel-info">
+          <div class="panel-heading" style="text-align: center">
+            <h3> Results </h3>
+          </div>
+          <div class="panel-body" style="font-size: small;">
+
+            <p> Your Guess: <u>{{guessedCountry}}</u></p>
+            <p *ngIf="gameType == 1"> Correct Answer: <u>{{correctAnswer}}</u></p>
+            <p> Correct Guesses: <u>{{correctCount}} / {{guessedCount}}</u></p>
+
+            <table class="table table-bordered table-striped mb-0" style="font-size:11px">
+              <thead>
+                      <tr>
+                          <th scope="col">Guessed</th>
+                          <th scope="col">Correct</th>
+                      </tr>
+                  </thead>
+                      <tbody *ngIf="!filterCorrectAnswers">
+                        <tr *ngFor="let row of allGuesses">
+                          <td (click)="highlightCountry(row.guessed)">{{row.guessed}}</td>
+                          <td (click)="highlightCountry(row.correct)">{{row.correct}}</td>
+                      </tr>
+                    </tbody>
+                    <tbody *ngIf="filterCorrectAnswers">
+                      <tr *ngFor="let row of incorrectGuesses">
+                        <td (click)="highlightCountry(row.guessed)">{{row.guessed}}</td>
+                        <td (click)="highlightCountry(row.correct)">{{row.correct}}</td>
+                    </tr>
+                  </tbody>
+                </table> 
+                <input type="checkbox" id="filterCorrectAnswers" name="filterCorrectAnswers" value="filterCorrectAnswers"
+                [(ngModel)]="filterCorrectAnswers">
+                <label for="filterCorrectAnswers" style="padding-left: 5px;">
+                Filter Correct Answers
+            </label>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+        <!-- </div>
+      </div>
+    </div> -->
+
+    
+    
+    
+  </div>
+</div>

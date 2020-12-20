@@ -1,0 +1,191 @@
+Asia/Southern Asia/Afghanistan/AFG
+Africa/Sub-Saharan Africa/Angola/AGO
+Europe/Southern Europe/Albania/ALB
+Europe/Southern Europe/Andorra/AND
+Asia/Western Asia/United Arab Emirates/ARE
+Americas/Latin America and the Caribbean/Argentina/ARG
+Asia/Western Asia/Armenia/ARM
+Oceania/Australia and New Zealand/Australia/AUS
+Europe/Western Europe/Austria/AUT
+Asia/Western Asia/Azerbaijan/AZE
+Africa/Sub-Saharan Africa/Burundi/BDI
+Europe/Western Europe/Belgium/BEL
+Africa/Sub-Saharan Africa/Benin/BEN
+Africa/Sub-Saharan Africa/Burkina Faso/BFA
+Asia/Southern Asia/Bangladesh/BGD
+Europe/Eastern Europe/Bulgaria/BGR
+Asia/Western Asia/Bahrain/BHR
+Americas/Latin America and the Caribbean/Bahamas/BHS
+Europe/Southern Europe/Bosnia and Herzegovina/BIH
+Europe/Eastern Europe/Belarus/BLR
+Americas/Latin America and the Caribbean/Belize/BLZ
+Americas/Latin America and the Caribbean/Bolivia (Plurinational State of)/BOL
+Americas/Latin America and the Caribbean/Brazil/BRA
+Asia/South-eastern Asia/Brunei Darussalam/BRN
+Asia/Southern Asia/Bhutan/BTN
+Africa/Sub-Saharan Africa/Botswana/BWA
+Africa/Sub-Saharan Africa/Central African Republic/CAF
+Americas/Northern America/Canada/CAN
+Europe/Western Europe/Switzerland/CHE
+Americas/Latin America and the Caribbean/Chile/CHL
+Asia/Eastern Asia/China/CHN
+Africa/Sub-Saharan Africa/Côte d’Ivoire/CIV
+Africa/Sub-Saharan Africa/Cameroon/CMR
+Africa/Sub-Saharan Africa/Democratic Republic of the Congo/COD
+Africa/Sub-Saharan Africa/Congo/COG
+Americas/Latin America and the Caribbean/Colombia/COL
+Africa/Sub-Saharan Africa/Comoros/COM
+Americas/Latin America and the Caribbean/Costa Rica/CRI
+Americas/Latin America and the Caribbean/Cuba/CUB
+Asia/Western Asia/Cyprus/CYP
+Europe/Eastern Europe/Czechia/CZE
+Europe/Western Europe/Germany/DEU
+Africa/Sub-Saharan Africa/Djibouti/DJI
+Europe/Northern Europe/Denmark/DNK
+Americas/Latin America and the Caribbean/Dominican Republic/DOM
+Africa/Northern Africa/Algeria/DZA
+Americas/Latin America and the Caribbean/Ecuador/ECU
+Africa/Northern Africa/Egypt/EGY
+Africa/Sub-Saharan Africa/Eritrea/ERI
+Africa/Northern Africa/Western Sahara/ESH
+Europe/Southern Europe/Spain/ESP
+Europe/Northern Europe/Estonia/EST
+Africa/Sub-Saharan Africa/Ethiopia/ETH
+Europe/Northern Europe/Finland/FIN
+Europe/Western Europe/France/FRA
+Oceania/Micronesia/Micronesia (Federated States of)/FSM
+Africa/Sub-Saharan Africa/Gabon/GAB
+Europe/Northern Europe/United Kingdom of Great Britain and Northern Ireland/GBR
+Asia/Western Asia/Georgia/GEO
+Europe/Northern Europe/Guernsey/GGY
+Africa/Sub-Saharan Africa/Ghana/GHA
+Africa/Sub-Saharan Africa/Guinea/GIN
+Africa/Sub-Saharan Africa/Gambia/GMB
+Africa/Sub-Saharan Africa/Guinea-Bissau/GNB
+Africa/Sub-Saharan Africa/Equatorial Guinea/GNQ
+Europe/Southern Europe/Greece/GRC
+Americas/Northern America/Greenland/GRL
+Americas/Latin America and the Caribbean/Guatemala/GTM
+Americas/Latin America and the Caribbean/French Guiana/GUF
+Oceania/Micronesia/Guam/GUM
+Americas/Latin America and the Caribbean/Guyana/GUY
+Americas/Latin America and the Caribbean/Honduras/HND
+Europe/Southern Europe/Croatia/HRV
+Americas/Latin America and the Caribbean/Haiti/HTI
+Europe/Eastern Europe/Hungary/HUN
+Asia/South-eastern Asia/Indonesia/IDN
+Asia/Southern Asia/India/IND
+Europe/Northern Europe/Ireland/IRL
+Asia/Southern Asia/Iran (Islamic Republic of)/IRN
+Asia/Western Asia/Iraq/IRQ
+Europe/Northern Europe/Iceland/ISL
+Asia/Western Asia/Israel/ISR
+Europe/Southern Europe/Italy/ITA
+Americas/Latin America and the Caribbean/Jamaica/JAM
+Europe/Northern Europe/Jersey/JEY
+Asia/Western Asia/Jordan/JOR
+Asia/Eastern Asia/Japan/JPN
+Asia/Central Asia/Kazakhstan/KAZ
+Africa/Sub-Saharan Africa/Kenya/KEN
+Asia/Central Asia/Kyrgyzstan/KGZ
+Asia/South-eastern Asia/Cambodia/KHM
+Oceania/Micronesia/Kiribati/KIR
+Asia/Eastern Asia/Republic of Korea/KOR
+Asia/Western Asia/Kuwait/KWT
+Asia/South-eastern Asia/Lao People's Democratic Republic/LAO
+Asia/Western Asia/Lebanon/LBN
+Africa/Sub-Saharan Africa/Liberia/LBR
+Africa/Northern Africa/Libya/LBY
+Europe/Western Europe/Liechtenstein/LIE
+Asia/Southern Asia/Sri Lanka/LKA
+Africa/Sub-Saharan Africa/Lesotho/LSO
+Europe/Northern Europe/Lithuania/LTU
+Europe/Western Europe/Luxembourg/LUX
+Europe/Northern Europe/Latvia/LVA
+Africa/Northern Africa/Morocco/MAR
+Europe/Western Europe/Monaco/MCO
+Europe/Eastern Europe/Republic of Moldova/MDA
+Africa/Sub-Saharan Africa/Madagascar/MDG
+Asia/Southern Asia/Maldives/MDV
+Americas/Latin America and the Caribbean/Mexico/MEX
+Oceania/Micronesia/Marshall Islands/MHL
+Europe/Southern Europe/North Macedonia/MKD
+Africa/Sub-Saharan Africa/Mali/MLI
+Europe/Southern Europe/Malta/MLT
+Asia/South-eastern Asia/Myanmar/MMR
+Europe/Southern Europe/Montenegro/MNE
+Asia/Eastern Asia/Mongolia/MNG
+Africa/Sub-Saharan Africa/Mozambique/MOZ
+Africa/Sub-Saharan Africa/Mauritania/MRT
+Africa/Sub-Saharan Africa/Mauritius/MUS
+Africa/Sub-Saharan Africa/Malawi/MWI
+Asia/South-eastern Asia/Malaysia/MYS
+Africa/Sub-Saharan Africa/Namibia/NAM
+Africa/Sub-Saharan Africa/Niger/NER
+Africa/Sub-Saharan Africa/Nigeria/NGA
+Americas/Latin America and the Caribbean/Nicaragua/NIC
+Oceania/Polynesia/Niue/NIU
+Europe/Western Europe/Netherlands/NLD
+Europe/Northern Europe/Norway/NOR
+Asia/Southern Asia/Nepal/NPL
+Oceania/Australia and New Zealand/New Zealand/NZL
+Asia/Western Asia/Oman/OMN
+Asia/Southern Asia/Pakistan/PAK
+Americas/Latin America and the Caribbean/Panama/PAN
+Americas/Latin America and the Caribbean/Peru/PER
+Asia/South-eastern Asia/Philippines/PHL
+Oceania/Micronesia/Palau/PLW
+Oceania/Melanesia/Papua New Guinea/PNG
+Europe/Eastern Europe/Poland/POL
+Americas/Latin America and the Caribbean/Puerto Rico/PRI
+Asia/Eastern Asia/Democratic People's Republic of Korea/PRK
+Europe/Southern Europe/Portugal/PRT
+Americas/Latin America and the Caribbean/Paraguay/PRY
+Asia/Western Asia/State of Palestine/PSE
+Oceania/Polynesia/French Polynesia/PYF
+Asia/Western Asia/Qatar/QAT
+Europe/Eastern Europe/Romania/ROU
+Europe/Eastern Europe/Russian Federation/RUS
+Africa/Sub-Saharan Africa/Rwanda/RWA
+Asia/Western Asia/Saudi Arabia/SAU
+Africa/Northern Africa/Sudan/SDN
+Africa/Sub-Saharan Africa/South Sudan/SSD
+Africa/Sub-Saharan Africa/Senegal/SEN
+Asia/South-eastern Asia/Singapore/SGP
+Africa/Sub-Saharan Africa/Sierra Leone/SLE
+Americas/Latin America and the Caribbean/El Salvador/SLV
+Europe/Southern Europe/San Marino/SMR
+Africa/Sub-Saharan Africa/Somalia/SOM
+Europe/Southern Europe/Serbia/SRB
+Africa/Sub-Saharan Africa/Sao Tome and Principe/STP
+Americas/Latin America and the Caribbean/Suriname/SUR
+Europe/Eastern Europe/Slovakia/SVK
+Europe/Southern Europe/Slovenia/SVN
+Europe/Northern Europe/Sweden/SWE
+Africa/Sub-Saharan Africa/Eswatini/SWZ
+Africa/Sub-Saharan Africa/Seychelles/SYC
+Asia/Western Asia/Syrian Arab Republic/SYR
+Africa/Sub-Saharan Africa/Chad/TCD
+Africa/Sub-Saharan Africa/Togo/TGO
+Asia/South-eastern Asia/Thailand/THA
+Asia/Central Asia/Tajikistan/TJK
+Asia/Central Asia/Turkmenistan/TKM
+Asia/South-eastern Asia/Timor-Leste/TLS
+Oceania/Polynesia/Tonga/TON
+Americas/Latin America and the Caribbean/Trinidad and Tobago/TTO
+Africa/Northern Africa/Tunisia/TUN
+Asia/Western Asia/Turkey/TUR
+Oceania/Polynesia/Tuvalu/TUV
+Africa/Sub-Saharan Africa/United Republic of Tanzania/TZA
+Africa/Sub-Saharan Africa/Uganda/UGA
+Europe/Eastern Europe/Ukraine/UKR
+Americas/Latin America and the Caribbean/Uruguay/URY
+Americas/Northern America/United States of America/USA
+Asia/Central Asia/Uzbekistan/UZB
+Europe/Southern Europe/Holy See/VAT
+Americas/Latin America and the Caribbean/Venezuela (Bolivarian Republic of)/VEN
+Asia/South-eastern Asia/Viet Nam/VNM
+Asia/Western Asia/Yemen/YEM
+Africa/Sub-Saharan Africa/South Africa/ZAF
+Africa/Sub-Saharan Africa/Zambia/ZMB
+Africa/Sub-Saharan Africa/Zimbabwe/ZWE
