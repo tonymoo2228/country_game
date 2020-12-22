@@ -2,6 +2,11 @@
 
 <div class="row">
   <div class="columnLeft">
+    <!-- <input type="checkbox" id="informationMode" name="informationMode" value="informationMode"
+    [(ngModel)]="informationMode">
+    <label for="informationMode" style="padding-left: 5px;">
+      Information Mode
+    </label> -->
     <div leaflet
       style="height: 800px"
       [leafletLayers]="options.layers"
@@ -53,11 +58,21 @@
                 </select>
               </div>
               <div class="columnHalf">
-                <div class="center" style="padding-top: 20%;">
-                  <button class="btn btn-outline-primary" (click)="startGame()">
-                    Start Game
-                  </button>
+                <div class="center">
+                  <input type="checkbox" id="dontHighlightProgressState" name="dontHighlightProgressState" value="dontHighlightProgressState"
+                  [(ngModel)]="dontHighlightProgressState">
+                  <label for="dontHighlightProgressState" style="padding-left: 5px;">
+                    Hard Mode
+                  </label>
                 </div>
+              </div>
+            </div>
+
+            <div class="row" style="padding-top: 5%;">
+              <div class="columnHalf" style="top: 100%;">
+                <button class="btn btn-outline-primary" (click)="startGame()">
+                  Start Game
+                </button>
               </div>
             </div>
 
@@ -137,7 +152,7 @@
                 [(ngModel)]="filterCorrectAnswers">
                 <label for="filterCorrectAnswers" style="padding-left: 5px;">
                 Filter Correct Answers
-            </label>
+                </label>
 
           </div>
         </div>

@@ -25,6 +25,9 @@ export class AppComponent
   public currentCountryName: string = "";
 
   public filterCorrectAnswers: boolean = true;
+  public dontHighlightProgress: boolean = false;
+  public dontHighlightProgressState: boolean = false;
+  public informationMode: boolean = false;
   public allGuesses: any[] = [];
   public incorrectGuesses: any[] = [];
 
@@ -39,6 +42,7 @@ export class AppComponent
 
   public startGame()
   {
+    this.dontHighlightProgress = this.dontHighlightProgressState;
     this.allGuesses = [];
     this.incorrectGuesses = [];
     this.correctCount = 0;
@@ -55,7 +59,7 @@ export class AppComponent
 
 
     this.countryFilterSelected();
-    if ( this.gameFilter != 'None' ) this.changeRegion();
+    this.changeRegion();
     const gameTypeSelected = ((document.getElementById("gameType") as HTMLInputElement).value);
 
     this.gameType = gameTypeSelected === "1" || gameTypeSelected === "3" ? 1 : 2;
@@ -90,30 +94,41 @@ export class AppComponent
   public allCountries: any[] = [];
   public changeRegion()
   {
-    const str: string = this.gameFilter === 'Regions' ? "region" : "subregion";
-    this.gameRegion = ((document.getElementById(str) as HTMLInputElement).value);
-    if ( this.gameFilter === 'Regions' )
+    console.log(this.gameFilter);
+    if ( this.gameFilter != 'None' ) 
     {
-      this.possibleCountries = this.regionCountries.get(this.gameRegion);
-      // this.allCountries.forEach(layer =>
-      // {
-      //   if ( this.possibleCountries.includes(layer) )
-      //   {
-      //     layer.setStyle({fillColor: 'white'});
-      //   }
-      // });
-    }
-    else if ( this.gameFilter === 'Subregions' )
-    {
-      this.possibleCountries = this.subregionCountries.get(this.gameRegion);
+      const str: string = this.gameFilter === 'Regions' ? "region" : "subregion";
+      this.gameRegion = ((document.getElementById(str) as HTMLInputElement).value);
+      if ( this.gameFilter === 'Regions' )
+      {
+        this.possibleCountries = this.regionCountries.get(this.gameRegion);
+        this.allCountries.forEach(layer =>
+        {
+          if ( this.possibleCountries.includes(layer) )
+          {
+            layer.setStyle({fillColor: 'grey'});
+          }
+        });
+      }
+      else if ( this.gameFilter === 'Subregions' )
+      {
+        this.possibleCountries = this.subregionCountries.get(this.gameRegion);
+        this.allCountries.forEach(layer =>
+          {
+            if ( this.possibleCountries.includes(layer) )
+            {
+              layer.setStyle({fillColor: 'grey'});
+            }
+          });
+      }
     }
     else
     {
+      console.log("hites the beans");
       this.possibleCountries = this.allCountries;
       this.possibleCountries.forEach( element => {
-        element.setStyle({ color: 'black' });
+        element.setStyle({ fillColor: 'grey' });
       });
-      return;
     }
 
     // this.possibleCountries.forEach( element => {
@@ -209,6 +224,8 @@ export class AppComponent
         }
       }}).addTo(map);
 
+      console.log(this.map);
+
 
     });
     this.filteredCountryNames = this.countryNames;
@@ -220,16 +237,21 @@ export class AppComponent
 
   public countrySelected(layer: any)
   {
+    // if (this.informationMode)
+    // {
+    //   layer.bindTooltip(layer['feature'].properties.ADMIN).openTooltip();
+    // }
+
     if ( !this.gameStarted || this.gameType == 1 ) return;
 
     if ( this.currentCountryName == layer['feature'].properties.ADMIN )
     {
-      this.currentCountry.setStyle({fillColor: 'green'});
+      if (!this.dontHighlightProgress) this.currentCountry.setStyle({fillColor: 'green'});
       this.correctCount += 1;
     }
     else
     {
-      this.currentCountry.setStyle({fillColor: 'red'});
+      if (!this.dontHighlightProgress) this.currentCountry.setStyle({fillColor: 'red'});
       this.incorrectGuesses.push( {
         'guessed' : layer['feature'].properties.ADMIN,
         'correct' : this.currentCountryName
@@ -329,11 +351,11 @@ export class AppComponent
     if ( guessedName.toLowerCase() == this.currentCountry.feature.properties['ADMIN'].toLowerCase() || this.currentCountry.feature.properties['ADMIN'].toLowerCase().includes(guessedName.toLowerCase()) )
     {
       this.correctCount += 1;
-      this.currentCountry.setStyle({fillColor: 'green'});
+      if (!this.dontHighlightProgress) this.currentCountry.setStyle({fillColor: 'green'});
     }
     else
     {
-      this.currentCountry.setStyle({fillColor: 'red'});
+      if (!this.dontHighlightProgress) this.currentCountry.setStyle({fillColor: 'red'});
       this.incorrectGuesses.push( {
         'guessed' : guessedName,
         'correct' : this.currentCountryName
